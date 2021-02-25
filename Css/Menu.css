@@ -9,8 +9,13 @@
 *
 {
     font-family: Samim;
+    padding: 10px;
+    box-sizing: border-box;
 }
-
+body
+{
+    margin: 0px;
+}
 @media (min-width: 1200px) {
 
 }
