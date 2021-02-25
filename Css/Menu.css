@@ -1,1 +1,36 @@
+@font-face
+{
+    font-family: Samim;
+    src: url('../Fonts/Samim/Samim.eot');
+    src: url('../Fonts/Samim/Samim.ttf') format('truetype');
+    src: url('../Fonts/Samim/Samim.eot#?ifeix') format('eot');
+    src: url('../Fonts/Samim/Samim.woff') format('woff');
+}
+*
+{
+    font-family: Samim;
+}
 
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 350px) {
+
+}

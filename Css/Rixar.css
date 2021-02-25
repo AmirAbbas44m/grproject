@@ -1,0 +1,537 @@
+@charset "utf-8";
+
+/* Rixar Frame-Work*/
+
+/* Use Code For Div You Want Clear*/
+
+.Resize::after
+   {
+       float: left;
+   }
+
+   /* You Can Use This Persian Fonts For You Project(5)*/
+
+   @font-face
+   {
+         font-family: Samim;
+         src: url("../Fonts/Samim/Samim.eot");
+         src: url("../Fonts/Samim/Samim.eot#?ifeix") format("eot");
+         src: url("../Fonts/Samim/Samim.ttf") format("truetype");
+         src: url("../Fonts/Samim/Samim.woff") format("woff");
+   }
+   /*(2)*/
+   @font-face
+   {
+         font-family: Tanha;
+         src: url("../Fonts/Taha/Tanha.eot");
+         src: url("../Fonts/Taha/Tanha.eot#?ifeix") format("eot");
+         src: url("../Fonts/Taha/Tanha.ttf") format("truetype");
+         src: url("../Fonts/Taha/Tanha.woff") format("woff");
+         src: url("../Fonts/Taha/Tanha.woff2") format("woff2");
+   }
+   /*(3)*/
+   @font-face
+   {
+         font-family: Vazir;
+         src: url("../Fonts/Shabnam/Shabnam.eot");
+         src: url("../Fonts/Shabnam/Shabnam.eot#?ifeix") format("eot");
+         src: url("../Fonts/Shabnam/Shabnam.ttf") format("truetype");
+         src: url("../Fonts/Shabnam/Shabnam.woff") format("woff");
+         src: url("../Fonts/Shabnam/Shabnam.woff2") format("woff2");
+   }
+   /*(4) English-Font*/
+   @font-face
+   {
+         font-family: Fright;
+         src: url("../Fonts/Fright/Frightmare.otf") format("otf");
+         src: url("../Fonts/Fright/Frightmare.ttf") format("truetype");
+   }
+   /*(5)*/
+   @font-face
+   {
+         font-family: Lale;
+	     src: url("../Fonts/Lalezar/Lalezar-Regular.otf") format("otf"),
+	          url("../Fonts/Lalezar/Lalezar-Regular.ttf") format("truetype");
+   }
+   /*(6) English*/
+   @font-face
+   {
+        font-family: Eng;
+        src: url("../Fonts/Look/Look\ Within.otf") format("otf"),
+             url("../Fonts/Look/Look\ Within.ttf") format("truetype");
+   }
+   /*(7) English*/
+   @font-face
+   {
+        font-family: Eng2;
+        src: url("../Fonts/Owl\ Cute.ttf") format("truetype")
+   }
+   @font-face
+   {
+        font-family: Eng3;
+        src: url("../Fonts/TabarraPro-Light-FFP.ttf") format("truetype");
+   }
+
+   /* This Code For Active Font On ALL P Tag*/
+
+
+   *
+   {
+      font-family: Samim;
+      color: rgb(63, 63, 63);
+      box-sizing: border-box;
+      list-style-type: none;
+   }
+    /*           */
+    body
+   {
+       margin: 0px;
+       direction: rtl;
+   }
+   /* Padding Class */
+   [class*=Rixar-F]
+   {
+       padding: 13px;
+       float: right;
+   }
+  
+   /* Media 1200px And More */
+   @media (min-width: 1200px)
+   {
+         .Rixar-F1-1
+         {
+             width: 5%;
+         }
+         .Rixar-F1-2
+         {
+             width: 10%;
+         }
+         .Rixar-F1-3
+         {
+             width: 15%;
+         }
+         .Rixar-F1-4
+         {
+             width: 20%;
+         }
+         .Rixar-F1-5
+         {
+             width: 25%;
+         }
+         .Rixar-F1-6
+         {
+             width: 30%;
+         }
+         .Rixar-F1-7
+         {
+             width: 35%;
+         }
+         .Rixar-F1-8
+         {
+             width: 40%;
+         }
+         .Rixar-F1-9
+         {
+             width: 45%;
+         }
+         .Rixar-F1-10
+         {
+             width: 50%;
+         }
+         .Rixar-F1-11
+         {
+             width: 55%;
+         }
+         .Rixar-F1-12
+         {
+             width: 60%;
+         }
+         .Rixar-F1-13
+         {
+             width: 65%;
+         }
+         .Rixar-F1-14
+         {
+             width: 70%;
+         }
+         .Rixar-F1-15
+         {
+             width: 75%;
+         }
+         .Rixar-F1-16
+         {
+             width: 80%;
+         }
+         .Rixar-F1-17
+         {
+             width: 85%;
+         }
+         .Rixar-F1-18
+         {
+             width: 90%;
+         }
+         .Rixar-F1-19
+         {
+             width: 95%;
+         }
+         .Rixar-F1-20
+         {
+             width: 100%;
+         }
+         .Rixar-F1-21
+        {
+          width: 33.33%;
+        }           
+   }
+   /* 992 BT 1199 */
+   @media (min-width: 992px) and (max-width: 1199px)
+   {
+        .Rixar-F2-1
+        {
+            width: 5%;
+        }       
+        .Rixar-F2-2
+        {
+        width: 10%;
+        }
+        .Rixar-F2-3
+        {
+        width: 15%;
+        }
+        .Rixar-F2-4
+        {
+        width: 20%;
+        }
+        .Rixar-F2-5
+        {
+        width: 25%;
+        }  
+        .Rixar-F2-6
+        {
+          width: 30%;
+        }
+        .Rixar-F2-7
+        {
+          width: 35%;
+        }
+        .Rixar-F2-8
+        {
+          width: 40%;
+        }
+        .Rixar-F2-9
+        {
+          width: 45%;
+        }
+        .Rixar-F2-10
+        {
+          width: 50%;
+        }
+        .Rixar-F2-11
+        {
+          width: 55%;
+        }
+        .Rixar-F2-12
+        {
+          width: 60%;
+        }
+        .Rixar-F2-13
+        {
+          width: 65%;
+        }
+        .Rixar-F2-14
+        {
+          width: 70%;
+        }
+        .Rixar-F2-15
+        {
+          width: 75%;
+        }
+        .Rixar-F2-16
+        {
+          width: 80%;
+        }    
+        .Rixar-F2-17
+        {
+          width: 85%;
+        }
+        .Rixar-F2-18
+        {
+          width: 90%;
+        }
+        .Rixar-F2-19
+        {
+          width: 95%;
+        }
+        .Rixar-F2-20
+        {
+          width: 100%;
+        }
+        .Rixar-F2-21
+        {
+          width: 33.33%;
+        }                 
+   }
+/* 768 BT 991 */
+@media (min-width: 767px) and (max-width: 991px)
+   {
+        .Rixar-F3-1
+        {
+            width: 5%;
+        }       
+        .Rixar-F3-2
+        {
+        width: 10%;
+        }
+        .Rixar-F3-3
+        {
+        width: 15%;
+        }
+        .Rixar-F3-4
+        {
+        width: 20%;
+        }
+        .Rixar-F3-5
+        {
+        width: 25%;
+        }  
+        .Rixar-F3-6
+        {
+          width: 30%;
+        }
+        .Rixar-F3-7
+        {
+          width: 35%;
+        }
+        .Rixar-F3-8
+        {
+          width: 40%;
+        }
+        .Rixar-F3-9
+        {
+          width: 45%;
+        }
+        .Rixar-F3-10
+        {
+          width: 50%;
+        }
+        .Rixar-F3-11
+        {
+          width: 55%;
+        }
+        .Rixar-F3-12
+        {
+          width: 60%;
+        }
+        .Rixar-F3-13
+        {
+          width: 65%;
+        }
+        .Rixar-F3-14
+        {
+          width: 70%;
+        }
+        .Rixar-F3-15
+        {
+          width: 75%;
+        }
+        .Rixar-F3-16
+        {
+          width: 80%;
+        }    
+        .Rixar-F3-17
+        {
+          width: 85%;
+        }
+        .Rixar-F3-18
+        {
+          width: 90%;
+        }
+        .Rixar-F3-19
+        {
+          width: 95%;
+        }
+        .Rixar-F3-20
+        {
+          width: 100%;
+        }      
+        .Rixar-F3-21
+        {
+          width: 33.33%;
+        }           
+   }
+/* 481 BT 767 */
+@media (min-width: 481px) and (max-width: 767px)
+{
+     .Rixar-F4-1
+     {
+         width: 5%;
+     }       
+     .Rixar-F4-2
+     {
+     width: 10%;
+     }
+     .Rixar-F4-3
+     {
+     width: 15%;
+     }
+     .Rixar-F4-4
+     {
+     width: 20%;
+     }
+     .Rixar-F4-5
+     {
+     width: 25%;
+     }  
+     .Rixar-F4-6
+     {
+       width: 30%;
+     }
+     .Rixar-F4-7
+     {
+       width: 35%;
+     }
+     .Rixar-F4-8
+     {
+       width: 40%;
+     }
+     .Rixar-F4-9
+     {
+       width: 45%;
+     }
+     .Rixar-F4-10
+     {
+       width: 50%;
+     }
+     .Rixar-F4-11
+     {
+       width: 55%;
+     }
+     .Rixar-F4-12
+     {
+       width: 60%;
+     }
+     .Rixar-F4-13
+     {
+       width: 65%;
+     }
+     .Rixar-F4-14
+     {
+       width: 70%;
+     }
+     .Rixar-F4-15
+     {
+       width: 75%;
+     }
+     .Rixar-F4-16
+     {
+       width: 80%;
+     }    
+     .Rixar-F4-17
+     {
+       width: 85%;
+     }
+     .Rixar-F4-18
+     {
+       width: 90%;
+     }
+     .Rixar-F4-19
+     {
+       width: 95%;
+     }
+     .Rixar-F4-20
+     {
+       width: 100%;
+     }      
+     .Rixar-F4-21
+     {
+       width: 33.33%;
+     }           
+}
+/* 480 And Lower */
+ @media (max-width: 480px)
+ {
+       .Rixar-F5-1
+       {
+           width: 5%;
+       }       
+       .Rixar-F5-2
+       {
+       width: 10%;
+       }
+       .Rixar-F5-3
+       {
+       width: 15%;
+       }
+       .Rixar-F5-4
+       {
+       width: 20%;
+       }
+       .Rixar-F5-5
+       {
+       width: 25%;
+       }  
+       .Rixar-F5-6
+       {
+         width: 30%;
+       }
+       .Rixar-F5-7
+       {
+         width: 35%;
+       }
+       .Rixar-F5-8
+       {
+         width: 40%;
+       }
+       .Rixar-F5-9
+       {
+         width: 45%;
+       }
+       .Rixar-F5-10
+       {
+         width: 50%;
+       }
+       .Rixar-F5-11
+       {
+         width: 55%;
+       }
+       .Rixar-F5-12
+       {
+         width: 60%;
+       }
+       .Rixar-F5-13
+       {
+         width: 65%;
+       }
+       .Rixar-F5-14
+       {
+         width: 70%;
+       }
+       .Rixar-F5-15
+       {
+         width: 75%;
+       }
+       .Rixar-F5-16
+       {
+         width: 80%;
+       }    
+       .Rixar-F5-17
+       {
+         width: 85%;
+       }
+       .Rixar-F5-18
+       {
+         width: 90%;
+       }
+       .Rixar-F5-19
+       {
+         width: 95%;
+       }
+       .Rixar-F5-20
+       {
+         width: 100%;
+       }      
+       .Rixar-F5-21
+       {
+         width: 33.33%;
+       }            
+ }   
