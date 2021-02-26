@@ -6,27 +6,83 @@
     src: url('../Fonts/Samim/Samim.eot#?ifeix') format('eot');
     src: url('../Fonts/Samim/Samim.woff') format('woff');
 }
+@font-face
+{
+    font-family: GoodPeople;
+    src: url('../Fonts/Toon/Lemonade\ Bold\ Demo.ttf') format('truetype');
+}
 *
 {
-    font-family: Samim;
-    padding: 10px;
-    box-sizing: border-box;
+   font-family: Samim;
+}
+.Title
+{
+    font-family: GoodPeople;
+    font-size: 40px;
+    color: white;
+    display: inline-block;
+   transform: translateY(-37px);
 }
 body
 {
     margin: 0px;
+    width: 100%;
+}
+.Header-Div
+{
+    background: rgb(29, 29, 29);
+    height: 80px;
+    float: right;
+}
+.Righter-Div
+{
+    background: rgb(29, 29, 29);
+    position: absolute;
+    right: 0px;
+    top: 80px;
+    height: 328px;
+    border-bottom-left-radius: 3px;
+}
+#ul-lefter li
+{
+
+    transform: translate(22%,-16px);
+    height: 40px;
+    width: 130%;
+    transition: all 200ms ease-out;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    cursor: pointer;
+    
+}
+#ul-lefter li span
+{
+    color: white;
+    position: absolute;
+    top: 6px;
+}
+#ul-lefter li:hover
+{
+  background: rgb(20, 20, 20);
+  color: rgb(169, 169, 255);
+  background-image: linear-gradient(rgb(29, 29, 29),rgb(78, 78, 78));
 }
 @media (min-width: 1200px) {
 
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+    #ul-lefter li
+    {
+        transform: translate(19%,-16px);
+        width: 126%;
+    }
+}
 
 }
 
 @media (min-width: 767px) and (max-width: 991px) {
-
-}
+ 
 
 @media (min-width: 481px) and (max-width: 767px) {
 
@@ -37,5 +93,8 @@ body
 }
 
 @media (max-width: 350px) {
-
+    .Title
+    {
+        font-size: 35px;
+    }
 }
