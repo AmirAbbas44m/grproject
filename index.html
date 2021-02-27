@@ -17,10 +17,19 @@
                     $('.Righter-Div').animate({ right: '0%' }, 200);
                     let closz = $('#close').css('z-index');
                     document.getElementById('open').style.zIndex = closz - 1;
+                    $('.Lefter-Div').animate({ left: '-50%' }, 200);
                 }
             });
+
             $('#close').click(function () {
                 $('.Righter-Div').animate({ right: '-=50%' }, 200);
+                let openz = $('#open').css('z-index')
+                document.getElementById('close').style.zIndex = openz - 1;
+            });
+
+            $('#ll').next().click(function () {
+                $('.Lefter-Div').animate({ left: '0%' }, 200);
+                $('.Righter-Div').animate({ right: '-50%' }, 200);
                 let openz = $('#open').css('z-index')
                 document.getElementById('close').style.zIndex = openz - 1;
             });
@@ -47,9 +56,15 @@
             <li><i class="fa fa-paint-brush"></i><span>خزندگان</span></li>
             <li><i class="fa fa-twitter"></i><span>پرندگان</span></li>
             <li><i class="fa fa-clock-o"></i><span>دوزیستان</span></li>
-            <li><i class="fa fa-address-book"></i><span>سازندگان</span></li>
+            <li id="ll"><i class="fa fa-address-book"></i><span>سازندگان</span></li>
             <li><i class="fa fa-cog"></i><span>تنظیمات</span> </li>
         </ul>
+
+    </div>
+
+
+    <div class="Rixar-F1-5 Rixar-F2-6 Rixar-F3-7 Rixar-F4-8 Rixar-F5-9 Rixar-F6-10 Lefter-Div">
+
 
     </div>
 

@@ -102,6 +102,15 @@ body
 {
     z-index: 10000000;
 }
+.Lefter-Div
+{
+    background: rgb(29, 29, 29);
+    position: absolute;
+    left: -50%;
+    top: 71px;
+    height: 328px;
+    border-bottom-right-radius: 9px;
+}
 @media (min-width: 1200px) {
 
 }
