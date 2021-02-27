@@ -96,11 +96,11 @@ body
 }
 #open
 {
-    z-index: 10000000;
+    z-index: 10000001;
 }
 #close 
 {
-    z-index: 10000001;
+    z-index: 10000000;
 }
 @media (min-width: 1200px) {
 
