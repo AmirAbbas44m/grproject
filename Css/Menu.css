@@ -31,41 +31,59 @@ body
 .Header-Div
 {
     background: rgb(29, 29, 29);
-    height: 80px;
+    height: 71px;
     float: right;
+    box-shadow: 0px 5px 15px 0px rgb(182, 182, 182);
 }
 .Righter-Div
 {
     background: rgb(29, 29, 29);
     position: absolute;
     right: 0px;
-    top: 80px;
+    top: 71px;
     height: 328px;
-    border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 9px;
 }
 #ul-lefter li
 {
 
-    transform: translate(22%,-16px);
+    transform: translate(24%,-16px);
     height: 40px;
-    width: 130%;
-    transition: all 200ms ease-out;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+    width: 135%;
     cursor: pointer;
-    
+    transition: all 400ms ease-out;
+}
+#ul-lefter li:hover 
+{
+    box-shadow: -6px -2px 15px 0.1px rgb(36, 36, 36);
 }
 #ul-lefter li span
 {
     color: white;
     position: absolute;
     top: 6px;
+    right: 16%;
+    transition: all 400ms ease-out;
 }
-#ul-lefter li:hover
+#ul-lefter li i
 {
-  background: rgb(20, 20, 20);
-  color: rgb(169, 169, 255);
-  background-image: linear-gradient(rgb(29, 29, 29),rgb(78, 78, 78));
+    position: absolute;
+    top: 10px;
+    font-size: 15px;
+    right: 3%;
+    color: white;
+    transition: all 400ms ease-out;
+}
+#ul-lefter li:hover span
+{
+   font-size: 18px;
+   right: 20%;
+   color: rgb(255, 217, 217);
+}
+#ul-lefter li:hover i
+{
+   font-size: 15px;
+   color: rgb(255, 217, 217);
 }
 @media (min-width: 1200px) {
 
@@ -79,16 +97,64 @@ body
     }
 }
 
-}
-
 @media (min-width: 767px) and (max-width: 991px) {
- 
-
-@media (min-width: 481px) and (max-width: 767px) {
-
+     .Righter-Div
+     {
+         width: 19%;
+     }
+     #ul-lefter li span
+     {   
+         font-size: 12px;
+     }
+     #ul-lefter li i 
+     {     
+         font-size: 12px;
+     }
+     #ul-lefter li:hover span
+     {
+         font-size: 13px;
+     }
+}
+@media (min-width: 530px) and (max-width: 767px) {
+    .Righter-Div
+    {
+        width: 26%;
+    }
+    #ul-lefter li span
+    {
+        right: 18.5%;
+        font-size: 12px;
+    }
+    #ul-lefter li i 
+    {
+        right: 3.3%;
+        font-size: 12px;
+    }
+    #ul-lefter li:hover span
+    {
+        font-size: 13px;
+    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 529px) {
+    .Righter-Div
+    {
+        width: 27%;
+    }
+    #ul-lefter li span
+    {
+        font-size: 13px;
+        right: 18%;
+    }
+    #ul-lefter li i 
+    {
+        right: 1.6%;
+        font-size: 13px;
+    }
+    #ul-lefter li:hover span
+    {
+        font-size: 16px;
+    }
 
 }
 
@@ -97,4 +163,20 @@ body
     {
         font-size: 35px;
     }
+    #ul-lefter li span
+    {
+        font-size: 12px;
+        right: 14%;
+    }
+    #ul-lefter li i 
+    {
+        right: -3%;
+        font-size: 13px;
+    }
+    #ul-lefter li:hover span
+    {
+        font-size: 13px;
+    }
+
+
 }
