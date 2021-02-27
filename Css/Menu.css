@@ -19,7 +19,7 @@
 {
     font-family: GoodPeople;
     font-size: 40px;
-    color: white;
+    color: rgb(255, 215, 215);
     display: inline-block;
    transform: translateY(-37px);
 }
@@ -39,7 +39,7 @@ body
 {
     background: rgb(29, 29, 29);
     position: absolute;
-    right: 0px;
+    right: -50%;
     top: 71px;
     height: 328px;
     border-bottom-left-radius: 9px;
@@ -84,6 +84,23 @@ body
 {
    font-size: 15px;
    color: rgb(255, 217, 217);
+}
+#open,#close
+{
+    position: absolute;
+    left: 0.5%;
+    top: 5px;
+    background: rgb(29, 29, 29);
+    border: none;
+    font-size: 26px;
+}
+#open
+{
+    z-index: 10000000;
+}
+#close 
+{
+    z-index: 10000001;
 }
 @media (min-width: 1200px) {
 
