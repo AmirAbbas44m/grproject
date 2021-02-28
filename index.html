@@ -17,7 +17,8 @@
                     $('.Righter-Div').animate({ right: '0%' }, 200);
                     let closz = $('#close').css('z-index');
                     document.getElementById('open').style.zIndex = closz - 1;
-                    $('.Lefter-Div').animate({ left: '-50%' }, 200);
+                    $('.Lefter-Div').animate({ opacity: '0' }, 200)
+
                 }
             });
 
@@ -27,12 +28,23 @@
                 document.getElementById('close').style.zIndex = openz - 1;
             });
 
+
             $('#ll').next().click(function () {
-                $('.Lefter-Div').animate({ left: '0%' }, 200);
+                $('.Lefter-Div').animate({ opacity: '1' }, 100)
                 $('.Righter-Div').animate({ right: '-50%' }, 200);
                 let openz = $('#open').css('z-index')
                 document.getElementById('close').style.zIndex = openz - 1;
             });
+
+            $('div').dblclick(function () {
+                let arrcolor = new Array('black', 'rgb(7, 7, 31)', 'rgb(15, 8, 15)', 'rgb(14, 26, 48)')
+                let rndcolor = Math.floor(Math.random() * 3)
+                $(this).css('background-color', arrcolor[rndcolor])
+                var backhead = $('.Header-Div').css('background-color')
+                $('#open,#close').css('background-color', backhead)
+            });
+
+
         });
 
 

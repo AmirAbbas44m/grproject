@@ -90,9 +90,9 @@ body
     position: absolute;
     left: 0.5%;
     top: 5px;
-    background: rgb(29, 29, 29);
     border: none;
     font-size: 26px;
+    background-color: rgb(29,29,29);
 }
 #open
 {
@@ -106,7 +106,8 @@ body
 {
     background: rgb(29, 29, 29);
     position: absolute;
-    left: -50%;
+    left: 0%;
+    opacity: 0;
     top: 71px;
     height: 328px;
     border-bottom-right-radius: 9px;
