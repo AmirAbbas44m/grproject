@@ -36,13 +36,38 @@
                 document.getElementById('close').style.zIndex = openz - 1;
             });
 
-            $('div').dblclick(function () {
+            $('.Header-Div,.Lefter-Div,.Righter-Div').dblclick(function () {
                 let arrcolor = new Array('black', 'rgb(7, 7, 31)', 'rgb(15, 8, 15)', 'rgb(14, 26, 48)')
-                let rndcolor = Math.floor(Math.random() * 3)
+                let rndcolor = Math.floor(Math.random() * 4)
                 $(this).css('background-color', arrcolor[rndcolor])
                 var backhead = $('.Header-Div').css('background-color')
                 $('#open,#close').css('background-color', backhead)
             });
+            var count = 0;
+            var slider = new Array('Images/clock.jpg', 'Images/books.jpg', 'Images/hnh.jpg')
+            $('.right').on({
+                click: function () {
+                    count -= 1
+                    $('.background').attr('src', slider[count])
+                    if (count < 1) {
+                        count = 3
+                    }
+
+                }
+            });
+
+            $('.left').on({
+                click: function () {
+                    count += 1
+                    $('.background').attr('src', slider[count])
+                    if (count > 1) {
+                        count = -1
+                    }
+                }
+
+            });
+
+
 
 
         });
@@ -80,6 +105,28 @@
 
     </div>
 
+    <div class="Rixar-F1-20 Rixar-F2-20 Rixar-F3-20 Rixar-F4-20 Rixar-F5-20 Rixar-F6-20" style="text-align: center;">
+        <img src="Images/clock.jpg" style="width: 99%; height: auto; margin-top: 10px; border-radius: 10px;"
+            class="background" />
+        <button class="left"> <i class="fa fa-caret-left"></i> </button>
+        <button class="right"><i class="fa fa-caret-right"></i></button>
+
+    </div>
+
+
+    <div class="Rixar-F1-20 Rixar-F2-20 Rixar-F3-20 Rixar-F4-20 Rixar-F5-20 Rixar-F6-20">
+        <hr>
+        <article>
+            <h2 style="text-align: center;">در مورد پروژه کلاسی</h2>
+            <p>
+
+                با سلام بنده امیر عباس کاظمی هستم (سازنده سایت) بالاخره تونستیم با کمک سازندگان عزیز پاورپوینت ساخت سایت
+                رو به پایان برسونیم حتما قبلا از این که از سایت دیدن کنید اموزش های مربوطه
+                راجب به بخض اصلی یعنی تنظیمات سایت که شامل شخصی سازی حرفه ای سایت هست رو مطالعه کنید
+                <a href="#">آموزش</a>
+            </p>
+        </article>
+    </div>
 
 
 </body>

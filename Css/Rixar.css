@@ -91,8 +91,8 @@
    /* Padding Class */
    [class*=Rixar-F]
    {
-       padding: 6px;
-       float: right;
+       padding: 0px;
+       float: left;
    }
   
    /* Media 1200px And More */
