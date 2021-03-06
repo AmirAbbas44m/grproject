@@ -164,6 +164,7 @@ img:hover
 .imgs
 {
     margin: 2.5%;
+    border-radius: 10px;
 }
 
 @media (min-width: 1200px) {
