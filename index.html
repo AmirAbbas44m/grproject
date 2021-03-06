@@ -36,38 +36,34 @@
                 document.getElementById('close').style.zIndex = openz - 1;
             });
 
-            $('.Header-Div,.Lefter-Div,.Righter-Div').dblclick(function () {
-                let arrcolor = new Array('black', 'rgb(7, 7, 31)', 'rgb(15, 8, 15)', 'rgb(14, 26, 48)')
-                let rndcolor = Math.floor(Math.random() * 4)
-                $(this).css('background-color', arrcolor[rndcolor])
-                var backhead = $('.Header-Div').css('background-color')
-                $('#open,#close').css('background-color', backhead)
-            });
-            var count = 0;
-            var slider = new Array('Images/clock.jpg', 'Images/books.jpg', 'Images/hnh.jpg')
-            $('.right').on({
-                click: function () {
-                    count -= 1
-                    $('.background').attr('src', slider[count])
-                    if (count < 1) {
-                        count = 3
-                    }
 
-                }
-            });
-
-            $('.left').on({
-                click: function () {
-                    count += 1
-                    $('.background').attr('src', slider[count])
-                    if (count > 1) {
-                        count = -1
-                    }
-                }
-
-            });
-
-
+            /* var count = 0;
+             var slider = new Array('Images/clock.jpg', 'Images/books.jpg', 'Images/hnh.jpg')
+             $('.right').on({
+                 click: function () {
+                     count -= 1
+                     $('.background').attr('src', slider[count])
+                     if (count < 1) {
+                         count = 3
+                     }
+ 
+                 }
+             });
+ 
+             $('.left').on({
+                 click: function () {
+                     count += 1;
+                     $('.background').attr('src', slider[count])
+                     if (count > 1) {
+                         count = -1;
+                     }
+                 }
+ 
+             });
+ 
+             $('.background').click(function () {
+                 $('.right,.left').fadeToggle(200)
+             });*/
 
 
         });
@@ -80,15 +76,15 @@
 
     <div class="Rixar-F1-20 Rixar-F2-20 Rixar-F3-20 Rixar-F4-20 Rixar-F5-20 Rixar-F6-20 Header-Div">
         <h2 class="Title" href="#">Skart</h2>
-        <button id="open"><i class="fa fa-navicon" style="color: white;"></i></button>
-        <button id="close"><i class="fa fa-remove" style="color: white;"></i></button>
+        <button id="open"><i class="fa fa-navicon" style="color: rgb(0, 0, 0);"></i></button>
+        <button id="close"><i class="fa fa-remove" style="color: rgb(0, 0, 0);"></i></button>
 
 
     </div>
     <div class="Rixar-F1-3 Rixar-F2-4 Rixar-F3-4  Rixar-F5-7 Rixar-F6-8 Righter-Div">
         <ul id="ul-lefter">
             <li><i class="fa fa-user-circle"></i><span>خانه</span></li>
-            <li><i class="fa fa-mortar-board"></i><span>کرم ها</span></li>
+            <li><i class="fa fa-mortar-board"></i><span><a href="#parand" style="color: black;">پرندگان</a></span></li>
             <li><i class="fa fa-pencil"></i><span>ماهی ها</span></li>
             <li><i class="fa fa-paint-brush"></i><span>خزندگان</span></li>
             <li><i class="fa fa-twitter"></i><span>پرندگان</span></li>
@@ -103,30 +99,100 @@
     <div class="Rixar-F1-5 Rixar-F2-6 Rixar-F3-7 Rixar-F4-8 Rixar-F5-9 Rixar-F6-10 Lefter-Div">
 
 
+
     </div>
 
-    <div class="Rixar-F1-20 Rixar-F2-20 Rixar-F3-20 Rixar-F4-20 Rixar-F5-20 Rixar-F6-20" style="text-align: center;">
-        <img src="Images/clock.jpg" style="width: 99%; height: auto; margin-top: 10px; border-radius: 10px;"
-            class="background" />
-        <button class="left"> <i class="fa fa-caret-left"></i> </button>
-        <button class="right"><i class="fa fa-caret-right"></i></button>
 
+
+
+    <div class="Rixar-F1-9 Rixar-F2-9 Rixar-F3-9 Rixar-F4-18 Rixar-F5-18 Rixar-F6-18 zipit">
+        <img src="Images/1175457.jpg" style="width: 100%;" class="imgh1" />
+        <h1>آینده تو با کاری که الان میکنی ساخته می شود نه فردا</h1>
+    </div>
+
+    <div class="Rixar-F1-9 Rixar-F2-9 Rixar-F3-9 Rixar-F4-18 Rixar-F5-18 Rixar-F6-18 zipits">
+        <img src="Images/elif.jpg" style="width: 100%;" class="imgh2" />
+        <h1>دانشمند کسی است که بکوشد تا درد و رنج خود را بکاهد</h1>
     </div>
 
 
     <div class="Rixar-F1-20 Rixar-F2-20 Rixar-F3-20 Rixar-F4-20 Rixar-F5-20 Rixar-F6-20">
+        <br>
+        <br>
         <hr>
-        <article>
-            <h2 style="text-align: center;">در مورد پروژه کلاسی</h2>
-            <p>
-
-                با سلام بنده امیر عباس کاظمی هستم (سازنده سایت) بالاخره تونستیم با کمک سازندگان عزیز پاورپوینت ساخت سایت
-                رو به پایان برسونیم حتما قبلا از این که از سایت دیدن کنید اموزش های مربوطه
-                راجب به بخض اصلی یعنی تنظیمات سایت که شامل شخصی سازی حرفه ای سایت هست رو مطالعه کنید
-                <a href="#">آموزش</a>
-            </p>
-        </article>
+        <h1 style="color: rgb(0, 68, 255);">درباره سایت:</h1>
+        <p style="text-align: center;">
+            با سلام من امیر عباس هستم, امیر عباس کاظمی, (سازنده سایت) بالاخره موفق شدیم با کمک سازندگان عزیز پاورپوینت
+            ساخت
+            سایت را پایان برسانیم هدف ما از ساخت این سایت پروژه کلاسی بوده است ولی بخش اصلی سایت که تنظیمات آن است باعث
+            می
+            شود که سایت را به بهترین شکل شخصی سازی کنید. شما می توانید با مراجعه به بخش
+            <a href="#"><span style="color: blue; text-decoration: underline;">آموزش</span></a> شخصی سازی کامل را یاد
+            بگیرید
+        </p>
+        <br>
+        <hr>
     </div>
+
+
+    <div class="Rixar-F1-20 Rixar-F2-20 Rixar-F3-20 Rixar-F4-20 Rixar-F5-20 Rixar-F6-20">
+        <br>
+        <h1 style="color: rgb(0, 68, 255);">سازنده اول:</h1>
+        <hr />
+        <h1>
+            نام: محسن
+            <br>
+            نام خانوادگی: قنبریان
+            <br>
+            موصوع پاور پوینت: <a name='parand'><span style="font-family: Lale;">پرندگان</span></a>
+            <br>
+            لینک پاور پوینت: <a href="PowerPoints/تحقیق در مورد پرندگان.pptx" style="font-family: Lale;">دانلود
+                مستقیم</a>
+            <br>
+            گالری عکس:
+        </h1>
+
+        <img src="Images/Screenshot_1.png"
+            class="Rixar-F1-9 Rixar-F2-9 Rixar-F3-9 Rixar-F4-18 Rixar-F5-18 Rixar-F6-18 imgs">
+        <img src="Images/Screenshot_2.png"
+            class="Rixar-F1-9 Rixar-F2-9 Rixar-F3-9 Rixar-F4-18 Rixar-F5-18 Rixar-F6-18 imgs">
+        <img src="Images/Screenshot_3.png"
+            class="Rixar-F1-9 Rixar-F2-9 Rixar-F3-9 Rixar-F4-18 Rixar-F5-18 Rixar-F6-18 imgs">
+        <img src="Images/Screenshot_4.png"
+            class="Rixar-F1-9 Rixar-F2-9 Rixar-F3-9 Rixar-F4-18 Rixar-F5-18 Rixar-F6-18 imgs">
+
+
+    </div>
+
+    <div class="Rixar-F1-20 Rixar-F2-20 Rixar-F3-20 Rixar-F4-20 Rixar-F5-20 Rixar-F6-20">
+        <br>
+        <h1 style="color: rgb(0, 68, 255);">سازنده دوم:</h1>
+        <hr />
+        <h1>
+            نام:
+            <br>
+            نام خانوادگی:
+            <br>
+            موصوع پاور پوینت: <a name='#'><span style="font-family: Lale;">؟</span></a>
+            <br>
+            لینک پاور پوینت: <a href="#" style="font-family: Lale;">دانلود
+                مستقیم</a>
+            <br>
+            گالری عکس:
+        </h1>
+
+        <!--<img src="Images/Screenshot_1.png"
+            class="Rixar-F1-9 Rixar-F2-9 Rixar-F3-9 Rixar-F4-18 Rixar-F5-18 Rixar-F6-18 imgs">
+        <img src="Images/Screenshot_2.png"
+            class="Rixar-F1-9 Rixar-F2-9 Rixar-F3-9 Rixar-F4-18 Rixar-F5-18 Rixar-F6-18 imgs">
+        <img src="Images/Screenshot_3.png"
+            class="Rixar-F1-9 Rixar-F2-9 Rixar-F3-9 Rixar-F4-18 Rixar-F5-18 Rixar-F6-18 imgs">
+        <img src="Images/Screenshot_4.png"
+            class="Rixar-F1-9 Rixar-F2-9 Rixar-F3-9 Rixar-F4-18 Rixar-F5-18 Rixar-F6-18 imgs">-->
+
+
+    </div>
+
 
 
 </body>
