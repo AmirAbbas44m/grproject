@@ -162,8 +162,14 @@ img:hover
 .imgs
 {
     margin: 2.5%;
-    border-radius: 10px;
+    border-radius: 10px;   
 }
+.h1c
+{
+    color: white;
+    margin-right: 2%;
+}
+
 
 @media (min-width: 1200px) {
     .left 
@@ -269,10 +275,7 @@ img:hover
     {
         font-size: 27px;
     }
-    .imgs 
-    {
-        margin-left: 6%;
-    }
+
 }
 
 @media (max-width: 529px) {
@@ -325,6 +328,7 @@ img:hover
         margin-left: 6%;
     }
 
+
 }
 
 @media (max-width: 350px) {
@@ -373,8 +377,5 @@ img:hover
     {
         font-size: 15px;
     }
-    .imgs 
-    {
-        margin-left: 5.5%;
-    }
+
 }
