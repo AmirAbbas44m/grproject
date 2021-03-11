@@ -29,41 +29,32 @@
             });
 
 
-            $('#ll').next().click(function () {
+            /* $('#ll').next().click(function () {
                 $('.Lefter-Div').animate({ opacity: '1' }, 100)
                 $('.Righter-Div').animate({ right: '-50%' }, 200);
                 let openz = $('#open').css('z-index')
                 document.getElementById('close').style.zIndex = openz - 1;
+            });*/
+
+            $('.sub').click(function () {
+                var sure = confirm('Are You Sure');
+                if (sure == true) {
+                    if (document.getElementById('input1').value == 'shadow') {
+                        $('.Header-Div').css('box-shadow', '1px 5px 15px 3px rgb(182, 182, 182)');
+
+                    }
+                    else if (document.getElementById('input1').value == 'none') {
+                        $('.Header-Div').css('box-shadow', 'none');
+
+                    }
+
+                }
+
             });
 
-
-            /* var count = 0;
-             var slider = new Array('Images/clock.jpg', 'Images/books.jpg', 'Images/hnh.jpg')
-             $('.right').on({
-                 click: function () {
-                     count -= 1
-                     $('.background').attr('src', slider[count])
-                     if (count < 1) {
-                         count = 3
-                     }
- 
-                 }
-             });
- 
-             $('.left').on({
-                 click: function () {
-                     count += 1;
-                     $('.background').attr('src', slider[count])
-                     if (count > 1) {
-                         count = -1;
-                     }
-                 }
- 
-             });
- 
-             $('.background').click(function () {
-                 $('.right,.left').fadeToggle(200)
-             });*/
+            $('.bop').click(function () {
+                $('.bop').next().slideToggle(200)
+            });
 
 
         });
@@ -96,9 +87,17 @@
     </div>
 
 
-    <div class="Rixar-F1-5 Rixar-F2-6 Rixar-F3-7 Rixar-F4-8 Rixar-F5-9 Rixar-F6-10 Lefter-Div">
+    <div class="Rixar-F1-4 Rixar-F2-5 Rixar-F3-6 Rixar-F4-7 Rixar-F5-9 Rixar-F6-10 Lefter-Div">
+        <button class="bop">Header</button>
+        <div style="background: rgb(161, 161, 161);">
+            <span class="spinf" style="right: 4.8%; top: 30px;">تغییر سایه هدر </span> <input type="text"
+                class="allinput" id="input1" style="width: 24%; top: 29px;">
 
+            <span class="spinf" style="right: 4.8%; top: 66px;">تغییر رنگ هدر </span> <input type="text"
+                class="allinput" id="input1" id="input2" style="width: 24%; top: 65px;">
 
+        </div>
+        <button class="sub">submit</button>
 
     </div>
 
@@ -138,11 +137,11 @@
 
     </div>
 
-    <div class="Rixar-F1-20 Rixar-F2-20 Rixar-F3-20 Rixar-F4-20 Rixar-F5-20 Rixar-F6-20"
-        style="background: radial-gradient(circle at 30% 107%, #80ddce 0%, #285AEB 5%, #fd3c3c 45%,#d6249f 60%,#285AEB 90%);">
+    <div class="Rixar-F1-20 Rixar-F2-20 Rixar-F3-20 Rixar-F4-20 Rixar-F5-20 Rixar-F6-20">
 
 
-        <div class="Rixar-F1-20 Rixar-F2-20 Rixar-F3-20 Rixar-F4-20 Rixar-F5-20 Rixar-F6-20">
+        <div class="Rixar-F1-20 Rixar-F2-20 Rixar-F3-20 Rixar-F4-20 Rixar-F5-20 Rixar-F6-20"
+            style="background: radial-gradient(circle at 30% 107%, #80ddce 0%, #285AEB 5%, #fd3c3c 45%,#d6249f 60%,#285AEB 90%);">
             <br>
             <h1 style="color: rgb(247, 92, 65);">سازنده اول:</h1>
             <hr />
@@ -173,7 +172,8 @@
 
         </div>
 
-        <div class="Rixar-F1-20 Rixar-F2-20 Rixar-F3-20 Rixar-F4-20 Rixar-F5-20 Rixar-F6-20">
+        <div class="Rixar-F1-20 Rixar-F2-20 Rixar-F3-20 Rixar-F4-20 Rixar-F5-20 Rixar-F6-20"
+            style="background: radial-gradient(circle at 30% 107%, #80ddce 0%, #285AEB 5%, #fd3c3c 45%,#d6249f 60%,#285AEB 90%);">
             <br>
             <h1 style="color: rgb(0, 68, 255);">سازنده دوم:</h1>
             <hr />

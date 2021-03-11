@@ -69,12 +69,15 @@
    @font-face
    {
         font-family: Eng3;
-        src: url("../Fonts/TabarraPro-Light-FFP.ttf") format("truetype");
+        src: url("Fonts/TabarraPro-Light-FFP.ttf") format("truetype");
    }
 
    /* This Code For Active Font On ALL P Tag*/
 
-
+   .bop,.allinput
+   {
+     font-family: Eng3;
+   }
    *
    {
       font-family: Samim;

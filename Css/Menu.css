@@ -28,7 +28,7 @@
 {
     height: 71px;
     float: right;
-    box-shadow: 0px 5px 15px 0px rgb(182, 182, 182);
+    box-shadow: 6px 5px 15px 3px rgb(182, 182, 182);
     background-image: linear-gradient(to left,rgb(0, 211, 193),rgb(1, 110, 199));
 }
 .Righter-Div
@@ -100,7 +100,7 @@
     background-image: linear-gradient(to left,rgb(0, 211, 193),rgb(1, 110, 199));
     position: absolute;
     left: 0%;
-    opacity: 0;
+    opacity: 1;
     top: 71px;
     height: 328px;
     border-bottom-right-radius: 9px;
@@ -169,8 +169,32 @@ img:hover
     color: white;
     margin-right: 2%;
 }
-
-
+.bop 
+{
+    width: 100%;
+    background: radial-gradient(circle at 30% 107%, #eeec81 0%, #fdff7b 5%, #fd3c3c 45%,#d6249f 60%,#285AEB 90%);
+    border: none;
+    color: black;
+}
+.allinput
+{
+    border: none;
+    background: none;
+    border-radius: 5px;
+    color: black;
+    direction: rtl;
+    height: 25px;
+    position: absolute;
+    left: 1%;
+    text-align: center;
+    border: 0.3px black solid;
+}
+.spinf
+{
+    color: black;
+    font-size: 10px;
+    position: absolute;
+}
 @media (min-width: 1200px) {
     .left 
     {
@@ -179,6 +203,18 @@ img:hover
     .right 
     {
     top: 500px;
+    }
+    .bop
+    {
+        font-size: 20px;
+    }
+    .spinf
+    {
+     font-size: 16px;
+    }
+    #input1
+    {
+        left: 29%;
     }
 
 }
@@ -193,6 +229,18 @@ img:hover
     h1
     {
         font-size: 27px;
+    }
+    .bop
+    {
+        font-size: 20px;
+    }
+    .spinf
+    {
+     font-size: 16px;
+    }
+    #input1
+    {
+        left: 29%;
     }
 }
 
@@ -235,6 +283,18 @@ img:hover
     {
         font-size: 24px;
     }
+    .bop
+    {
+        font-size: 20px;
+    }
+    .spinf
+    {
+     font-size: 16px;
+    }
+    #input1
+    {
+        left: 25%;
+    }
 }
 @media (min-width: 530px) and (max-width: 767px) {
     .Righter-Div
@@ -275,10 +335,21 @@ img:hover
     {
         font-size: 27px;
     }
-
+    .bop
+    {
+        font-size: 20px;
+    }
+    .spinf
+    {
+     font-size: 16px;
+    }
+    #input1
+    {
+        left: 18%;
+    }
 }
 
-@media (max-width: 529px) {
+@media (min-width: 351px) and (max-width: 529px) {
     .Righter-Div
     {
         width: 27%;
@@ -327,8 +398,18 @@ img:hover
     {
         margin-left: 6%;
     }
-
-
+    .bop
+    {
+        font-size: 20px;
+    }
+    .spinf
+    {
+     font-size: 15px;
+    }
+    #input1
+    {
+        left: 17%;
+    }
 }
 
 @media (max-width: 350px) {
@@ -377,5 +458,16 @@ img:hover
     {
         font-size: 15px;
     }
-
+    .bop
+    {
+        font-size: 15.1px;
+    }
+    #input1
+    {
+        left: 8%;
+    }
+    .spinf
+    {
+     font-size: 16px;
+    }
 }
