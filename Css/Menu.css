@@ -159,10 +159,23 @@ img:hover
 {
     box-shadow: 1px 1px 10px 0.1px black;
 }
+.img
+{
+    margin-left: 2.5%;
+    border-radius: 10px;
+    border: 1px black solid;
+    box-sizing: border-box;   
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
 .imgs
 {
-    margin: 2.5%;
-    border-radius: 10px;   
+    margin-left: 4%;
+    border-radius: 10px;
+    border: 1px black solid;
+    box-sizing: border-box;   
+    margin-top: 24px;
+    margin-bottom: 20px;
 }
 .h1c
 {
@@ -217,6 +230,7 @@ img:hover
         left: 29%;
     }
 
+
 }
 
 
@@ -241,6 +255,10 @@ img:hover
     #input1
     {
         left: 29%;
+    }
+    .bul
+    {
+        margin-top: -416px;
     }
 }
 
@@ -295,6 +313,10 @@ img:hover
     {
         left: 25%;
     }
+    .bul
+    {
+        margin-top: -250px;
+    }
 }
 @media (min-width: 530px) and (max-width: 767px) {
     .Righter-Div
@@ -347,6 +369,10 @@ img:hover
     {
         left: 18%;
     }
+    .imgs,.img
+    {
+        margin-left: 5.5%;
+    }
 }
 
 @media (min-width: 351px) and (max-width: 529px) {
@@ -394,9 +420,9 @@ img:hover
     {
         font-size: 24px;
     }
-    .imgs 
+    .imgs,.img
     {
-        margin-left: 6%;
+        margin-left: 5.5%;
     }
     .bop
     {
@@ -469,5 +495,9 @@ img:hover
     .spinf
     {
      font-size: 16px;
+    }
+    .imgs,.img
+    {
+        margin-left: 5.5%;
     }
 }
