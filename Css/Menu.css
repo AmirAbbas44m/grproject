@@ -194,19 +194,25 @@ img:hover
     border: none;
     background: none;
     border-radius: 5px;
-    color: black;
     direction: rtl;
     height: 25px;
     position: absolute;
-    left: 1%;
+    left: 29%;
     text-align: center;
     border: 0.3px black solid;
+    color: white;
+    color: ;
 }
 .spinf
 {
     color: black;
     font-size: 10px;
     position: absolute;
+}
+.sub 
+{
+    position: absolute;
+    bottom: 2px;
 }
 @media (min-width: 1200px) {
     .left 
@@ -251,10 +257,6 @@ img:hover
     .spinf
     {
      font-size: 16px;
-    }
-    #input1
-    {
-        left: 29%;
     }
     .bul
     {
@@ -309,7 +311,7 @@ img:hover
     {
      font-size: 16px;
     }
-    #input1
+    .allinput
     {
         left: 25%;
     }
@@ -365,7 +367,7 @@ img:hover
     {
      font-size: 16px;
     }
-    #input1
+    .allinput
     {
         left: 18%;
     }
@@ -432,7 +434,7 @@ img:hover
     {
      font-size: 15px;
     }
-    #input1
+    .allinput
     {
         left: 17%;
     }
@@ -488,7 +490,7 @@ img:hover
     {
         font-size: 15.1px;
     }
-    #input1
+    .allinput
     {
         left: 8%;
     }

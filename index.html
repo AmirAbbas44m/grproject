@@ -39,13 +39,25 @@
             $('.sub').click(function () {
                 var sure = confirm('Are You Sure');
                 if (sure == true) {
-                    if (document.getElementById('input1').value == 'shadow') {
+                    if (document.getElementById("input1").value == 'shadow') {
                         $('.Header-Div').css('box-shadow', '1px 5px 15px 3px rgb(182, 182, 182)');
 
                     }
-                    else if (document.getElementById('input1').value == 'none') {
+                    else if (document.getElementById("input1").value == 'none') {
                         $('.Header-Div').css('box-shadow', 'none');
 
+                    }
+
+                    var colors = new Array('black', 'blue', 'red', 'white', 'yellow', 'green', 'purple', 'gray', 'teal', 'tomato', 'cyan')
+                    for (var i = 0; i <= colors.length; i++) {
+                        if (document.getElementById('input2').value == colors[i]) {
+                            $('.Header-Div').css('background-image', 'none');
+                            $('.Header-Div').css('background-color', colors[i]);
+                            $('#open,#close').css('background-color', $('.Header-Div').css('background-color'));
+                        }
+                        if (document.getElementById('input3').value == colors[i]) {
+                            $('.Title').css('color', colors[i]);
+                        }
                     }
 
                 }
@@ -54,6 +66,9 @@
 
             $('.bop').click(function () {
                 $('.bop').next().slideToggle(200)
+            });
+            $('.allinput').keyup(function () {
+                $(this).css('color', $(this).val());
             });
 
 
@@ -79,7 +94,7 @@
             <li><i class="fa fa-pencil"></i><span>ماهی ها</span></li>
             <li><i class="fa fa-paint-brush"></i><span>خزندگان</span></li>
             <li><i class="fa fa-twitter"></i><span>پرندگان</span></li>
-            <li><i class="fa fa-clock-o"></i><span>دوزیستان</span></li>
+            <li><i class="fa fa-clock-o"></i><span><a href="#duzist" style="color: black;">دوزیستان</a></span></li>
             <li id="ll"><i class="fa fa-address-book"></i><span>سازندگان</span></li>
             <li><i class="fa fa-cog"></i><span>تنظیمات</span> </li>
         </ul>
@@ -94,7 +109,10 @@
                 class="allinput" id="input1" style="width: 24%; top: 29px;">
 
             <span class="spinf" style="right: 4.8%; top: 66px;">تغییر رنگ هدر </span> <input type="text"
-                class="allinput" id="input1" id="input2" style="width: 24%; top: 65px;">
+                class="allinput" id="input2" style="width: 24%; top: 65px;">
+
+            <span class="spinf" style="right: 4.8%; top: 103px;">تغییر رنگ لوگو </span> <input type="text"
+                class="allinput" id="input3" style="width: 24%; top: 102px;">
 
         </div>
         <button class="sub">submit</button>
@@ -196,6 +214,33 @@
         <img src="Images/duz2.png" class="Rixar-F1-9 Rixar-F2-9 Rixar-F3-9 Rixar-F4-18 Rixar-F5-18 Rixar-F6-18 imgs">
         <img src="Images/duz3.png" class="Rixar-F1-9 Rixar-F2-9 Rixar-F3-9 Rixar-F4-18 Rixar-F5-18 Rixar-F6-18 img">
         <img src="Images/duz4.png" class="Rixar-F1-9 Rixar-F2-9 Rixar-F3-9 Rixar-F4-18 Rixar-F5-18 Rixar-F6-18 imgs">
+
+
+    </div>
+
+    <div class="Rixar-F1-20 Rixar-F2-20 Rixar-F3-20 Rixar-F4-20 Rixar-F5-20 Rixar-F6-20"
+        style="background: radial-gradient(circle at 30% 107%, #80ddce 0%, #285AEB 5%, #fd3c3c 45%,#d6249f 60%,#285AEB 90%);">
+        <br>
+        <h1 style="color: rgb(247, 92, 65);">سازنده سوم:</h1>
+        <hr />
+        <h1 class="h1c" style="color: rgb(255, 255, 255);">
+            نام : ?
+            <br>
+            نام خانوادگی : ?
+            <br>
+            موصوع پاور پوینت : <a name='duzist'><span style="font-family: Lale; color: white;">?</span></a>
+            <br>
+            لینک پاور پوینت : <a href="#" style="font-family: Lale; color: rgb(0, 0, 0);">دانلود
+                مستقیم</a>
+            <br>
+            <br>
+            گالری عکس:
+        </h1>
+
+        <!--<img src="Images/duz1.png" class="Rixar-F1-9 Rixar-F2-9 Rixar-F3-9 Rixar-F4-18 Rixar-F5-18 Rixar-F6-18 img">
+    <img src="Images/duz2.png" class="Rixar-F1-9 Rixar-F2-9 Rixar-F3-9 Rixar-F4-18 Rixar-F5-18 Rixar-F6-18 imgs">
+    <img src="Images/duz3.png" class="Rixar-F1-9 Rixar-F2-9 Rixar-F3-9 Rixar-F4-18 Rixar-F5-18 Rixar-F6-18 img">
+    <img src="Images/duz4.png" class="Rixar-F1-9 Rixar-F2-9 Rixar-F3-9 Rixar-F4-18 Rixar-F5-18 Rixar-F6-18 imgs">-->
 
 
     </div>
