@@ -39,16 +39,16 @@
             $('.sub').click(function () {
                 var sure = confirm('Are You Sure');
                 if (sure == true) {
-                    if (document.getElementById("input1").value == 'shadow') {
+                    if (document.getElementById("input1").value == 'shadow' || document.getElementById("input1").value == 'Shadow') {
                         $('.Header-Div').css('box-shadow', '1px 5px 15px 3px rgb(182, 182, 182)');
 
                     }
-                    else if (document.getElementById("input1").value == 'none') {
+                    else if (document.getElementById("input1").value == 'none' || document.getElementById("input1").value == 'None') {
                         $('.Header-Div').css('box-shadow', 'none');
 
                     }
 
-                    var colors = new Array('black', 'blue', 'red', 'white', 'yellow', 'green', 'purple', 'gray', 'teal', 'tomato', 'cyan')
+                    var colors = new Array('black', 'blue', 'red', 'white', 'yellow', 'green', 'purple', 'gray', 'teal', 'tomato', 'cyan', 'Black', 'Blue', 'Red', 'White', 'Yellow', 'Green', 'Purple', 'Gray', 'Teal', 'Tomato', 'Cyan')
                     for (var i = 0; i <= colors.length; i++) {
                         if (document.getElementById('input2').value == colors[i]) {
                             $('.Header-Div').css('background-image', 'none');
