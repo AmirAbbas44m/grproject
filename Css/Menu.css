@@ -201,7 +201,6 @@ img:hover
     text-align: center;
     border: 0.3px black solid;
     color: white;
-    color: ;
 }
 .spinf
 {
@@ -214,6 +213,7 @@ img:hover
     position: absolute;
     bottom: 2px;
 }
+
 @media (min-width: 1200px) {
     .left 
     {

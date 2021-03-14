@@ -55,8 +55,16 @@
                             $('.Header-Div').css('background-color', colors[i]);
                             $('#open,#close').css('background-color', $('.Header-Div').css('background-color'));
                         }
+
+                        else if (document.getElementById("input2").value == 'none' || document.getElementById('input2').value == 'None') {
+                            $('.Header-Div').css('backgrond-color', 'none').css('background-image', 'linear-gradient(to left,rgb(0, 211, 193),rgb(1, 110, 199))');
+                            $('#open,#close').css('background-color', 'rgb(1, 110, 199)')
+                        }
                         if (document.getElementById('input3').value == colors[i]) {
                             $('.Title').css('color', colors[i]);
+                        }
+                        else if (document.getElementById("input3").value == 'none' || document.getElementById('input3').value == 'None') {
+                            $('.Header-Div').css('color', 'rgba(0, 0, 0, 0.795)')
                         }
                     }
 
@@ -115,6 +123,7 @@
                 class="allinput" id="input3" style="width: 24%; top: 107px;">
 
         </div>
+        <button class="bop language">Languages</button>
         <button class="sub">submit</button>
 
     </div>
