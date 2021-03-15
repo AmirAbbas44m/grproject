@@ -212,6 +212,7 @@ img:hover
 {
     position: absolute;
     bottom: 2px;
+    left: 3%;
 }
 
 @media (min-width: 1200px) {
