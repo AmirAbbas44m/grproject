@@ -182,13 +182,7 @@ img:hover
     color: white;
     margin-right: 2%;
 }
-.bop 
-{
-    width: 100%;
-    background: radial-gradient(circle at 30% 107%, #eeec81 0%, #fdff7b 5%, #fd3c3c 45%,#d6249f 60%,#285AEB 90%);
-    border: none;
-    color: black;
-}
+
 .allinput
 {
     border: none;
@@ -201,6 +195,10 @@ img:hover
     text-align: center;
     border: 0.3px black solid;
     color: white;
+}
+#input6 
+{
+    left: 19%
 }
 .spinf
 {
@@ -224,10 +222,6 @@ img:hover
     {
     top: 500px;
     }
-    .bop
-    {
-        font-size: 20px;
-    }
     .spinf
     {
      font-size: 16px;
@@ -250,10 +244,6 @@ img:hover
     h1
     {
         font-size: 27px;
-    }
-    .bop
-    {
-        font-size: 20px;
     }
     .spinf
     {
@@ -304,10 +294,6 @@ img:hover
     {
         font-size: 24px;
     }
-    .bop
-    {
-        font-size: 20px;
-    }
     .spinf
     {
      font-size: 16px;
@@ -315,6 +301,10 @@ img:hover
     .allinput
     {
         left: 25%;
+    }
+    #input6 
+    {
+        left: 15%
     }
     .bul
     {
@@ -360,10 +350,6 @@ img:hover
     {
         font-size: 27px;
     }
-    .bop
-    {
-        font-size: 20px;
-    }
     .spinf
     {
      font-size: 16px;
@@ -371,6 +357,10 @@ img:hover
     .allinput
     {
         left: 18%;
+    }
+    #input6 
+    {
+        left: 8%
     }
     .imgs,.img
     {
@@ -427,10 +417,6 @@ img:hover
     {
         margin-left: 5.5%;
     }
-    .bop
-    {
-        font-size: 20px;
-    }
     .spinf
     {
      font-size: 15px;
@@ -439,7 +425,11 @@ img:hover
     {
         left: 17%;
     }
-}
+    #input6 
+    {
+        left: 7%
+    }
+    }
 
 @media (max-width: 350px) {
     .Title
@@ -487,20 +477,21 @@ img:hover
     {
         font-size: 15px;
     }
-    .bop
-    {
-        font-size: 15.1px;
-    }
     .allinput
     {
-        left: 8%;
+        left: 10%;
     }
     .spinf
     {
-     font-size: 16px;
+     font-size: 14px;
     }
     .imgs,.img
     {
         margin-left: 5.5%;
     }
+    #input6 
+    {
+        left: 1.3%;
+    }
+    
 }

@@ -55,29 +55,41 @@
                             $('.Header-Div').css('background-color', colors[i]);
                             $('#open,#close').css('background-color', $('.Header-Div').css('background-color'));
                         }
-
                         else if (document.getElementById("input2").value == 'none' || document.getElementById('input2').value == 'None') {
                             $('.Header-Div').css('backgrond-color', 'none').css('background-image', 'linear-gradient(to left,rgb(0, 211, 193),rgb(1, 110, 199))');
                             $('#open,#close').css('background-color', 'rgb(1, 110, 199)')
                         }
+
+
                         if (document.getElementById('input3').value == colors[i]) {
                             $('.Title').css('color', colors[i]);
                         }
                         else if (document.getElementById("input3").value == 'none' || document.getElementById('input3').value == 'None') {
-                            $('.Header-Div').css('color', 'rgba(0, 0, 0, 0.795)')
+                            $('.Title').css('color', 'rgba(0, 0, 0, 0.795)')
                         }
-                    }
 
+
+
+                        if (document.getElementById("input4").value == colors[i]) {
+                            $('body').css("background-color", colors[i]);
+                        }
+
+
+                        if (document.getElementById("input5").value == colors[i]) {
+                            $('.fonts').css("color", colors[i]);
+                        }
+
+                        document.getElementById("dir").style.fontSize = document.getElementById("input6").value + 'px';
+                    }
                 }
 
             });
 
-            $('.bop').click(function () {
-                $('.bop').next().slideToggle(200)
-            });
             $('.allinput').keyup(function () {
                 $(this).css('color', $(this).val());
             });
+
+
 
 
         });
@@ -111,19 +123,29 @@
 
 
     <div class="Rixar-F1-4 Rixar-F2-5 Rixar-F3-6 Rixar-F4-7 Rixar-F5-9 Rixar-F6-10 Lefter-Div">
-        <button class="bop">Header</button>
+
         <div style="background: rgb(161, 161, 161);">
-            <span class="spinf" style="right: 4.8%; top: 35px;">تغییر سایه هدر </span> <input type="text"
-                class="allinput" id="input1" style="width: 24%; top: 34px;">
+            <span class="spinf" style="right: 4.8%; top: 5px;">تغییر سایه هدر </span> <input type="text"
+                class="allinput" id="input1" style="width: 24%; top: 4px;">
 
-            <span class="spinf" style="right: 4.8%; top: 71px;">تغییر رنگ هدر </span> <input type="text"
-                class="allinput" id="input2" style="width: 24%; top: 70px;">
+            <span class="spinf" style="right: 4.8%; top: 41px;">تغییر رنگ هدر </span> <input type="text"
+                class="allinput" id="input2" style="width: 24%; top: 40px;">
 
-            <span class="spinf" style="right: 4.8%; top: 108px;">تغییر رنگ لوگو </span> <input type="text"
-                class="allinput" id="input3" style="width: 24%; top: 107px;">
+            <span class="spinf" style="right: 4.8%; top: 78px;">تغییر رنگ لوگو </span> <input type="text"
+                class="allinput" id="input3" style="width: 24%; top: 77px;">
+
+            <span class="spinf" style="right: 4.8%; top: 115px;">تغییر رنگ بدنه</span> <input type="text"
+                class="allinput" id="input4" style="width: 24%; top: 114px;">
+
+            <span class="spinf" style="right: 4.8%; top: 152px;">تغییر رنگ فونت</span> <input type="text"
+                class="allinput" id="input5" style="width: 24%; top: 151px;">
+
+            <span class="spinf" style="right: 4.8%; top: 189px;">تغییر سایز فونت(1)</span> <input type="text"
+                class="allinput" id="input6" style="width: 24%; top: 188px;">
+
 
         </div>
-        <button class="bop language">Languages</button>
+
         <button class="sub">submit</button>
 
     </div>
@@ -133,12 +155,12 @@
 
     <div class="Rixar-F1-9 Rixar-F2-9 Rixar-F3-9 Rixar-F4-18 Rixar-F5-18 Rixar-F6-18 zipit">
         <img src="Images/1175457.jpg" style="width: 100%;" class="imgh1" />
-        <h1>آینده تو با کاری که الان میکنی ساخته می شود نه فردا</h1>
+        <h1 class="fonts">آینده تو با کاری که الان میکنی ساخته می شود نه فردا</h1>
     </div>
 
     <div class="Rixar-F1-9 Rixar-F2-9 Rixar-F3-9 Rixar-F4-18 Rixar-F5-18 Rixar-F6-18 zipits">
         <img src="Images/elif.jpg" style="width: 100%;" class="imgh2" />
-        <h1>دانشمند کسی است که بکوشد تا درد و رنج خود را بکاهد</h1>
+        <h1 class="fonts">دانشمند کسی است که بکوشد تا درد و رنج خود را بکاهد</h1>
     </div>
 
 
@@ -148,7 +170,7 @@
         <br>
         <hr>
         <h1 style="color: rgb(0, 68, 255);">درباره سایت:</h1>
-        <p style="text-align: center;">
+        <p style="text-align: center;" class="fonts">
             با سلام من امیر عباس هستم, امیر عباس کاظمی, (سازنده سایت) بالاخره موفق شدیم با کمک سازندگان عزیز
             پاورپوینت
             ساخت
@@ -172,7 +194,7 @@
         <br>
         <h1 style="color: rgb(247, 92, 65);">سازنده اول:</h1>
         <hr />
-        <h1 class="h1c">
+        <h1 class="h1c" id="dir">
             نام : محسن
             <br>
             نام خانوادگی : قنبریان
@@ -204,7 +226,7 @@
         <br>
         <h1 style="color: rgb(247, 92, 65);">سازنده دوم:</h1>
         <hr />
-        <h1 class="h1c" style="color: rgb(255, 255, 255);">
+        <h1 class="h1c" style="color: rgb(255, 255, 255);" id="dir">
             نام : ابوالفضل
             <br>
             نام خانوادگی : لشگری
@@ -232,7 +254,7 @@
         <br>
         <h1 style="color: rgb(247, 92, 65);">سازنده سوم:</h1>
         <hr />
-        <h1 class="h1c" style="color: rgb(255, 255, 255);">
+        <h1 class="h1c" style="color: rgb(255, 255, 255);" id="dir">
             نام : امیر رضا
             <br>
             نام خانوادگی : احمدیان
